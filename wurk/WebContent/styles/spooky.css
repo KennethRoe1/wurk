@@ -43,9 +43,6 @@ header h2{
 section h2::first-letter{
 	font-size: 250%;
 }
-section h1{
-	margin-bottom:0.5em;
-}
 section{
 	
 	width:560px;
@@ -53,7 +50,7 @@ section{
 	float:right;
 }
 section p{
-	margin-bottom:0.5em;
+	margin-top:0.5em;
 }
 aside{
 	float: left;
