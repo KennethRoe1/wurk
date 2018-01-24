@@ -26,22 +26,18 @@ header{
 	background: linear-gradient(45deg, white 0%, orange 75%, black 100%);
 	padding:15px;
 }
-p{
+p, h1, h2{
 	margin:0;
 	padding:0;
 }
 header h1{
 	text-indent:25px;
 	font-size: 250%;
-	margin:0;
-	padding:0;
 }
 
 header h2{
 	text-indent:25px;
 	font-size: 125%;
-	margin:0;
-	padding:0;
 }
 
 section h2::first-letter{
@@ -81,5 +77,5 @@ footer{
 	text-align:center;
 	padding: 15px;
 	border-top:2px solid black;
-	background: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background: linear-gradient(30deg, black 0%, orange 50%, white 100%);
 }
