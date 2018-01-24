@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+article, aside, figure, footer, header, nav, section {
+display: block;
+}
+
+html{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+img{
+	float: left;
+}
+
+header h1{
+	text-indent:25px;
+	color: orange;
+	font-style: italic;
+	text-shadow :4px 4px 4px black;
+	font-size: 250%;
+}
+
+header h2{
+	text-indent:25px;
+	font-size: 125%;
+}
+header h3{
+}
+
+section h3::first-letter{
+	font-size: 250%;
+}
+ul{
+	line-height:1.5;
+}
+ul li a{
+	font-weight:bold;
+	color:orange;
+}
+a:hover, a:focus{
+	color:green;
+}
+footer{
+	font-size:90%;
+	text-align:center;
+}
