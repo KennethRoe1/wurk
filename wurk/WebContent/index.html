@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<head>
+</head>
 <body>
 
 <h1>The XMLHttpRequest Object</h1>
@@ -7,6 +9,7 @@
 <p id="demo">Let AJAX change this text.</p>
 
 <button type="button" onclick="loadDoc()">Change Content</button>
+<button type="button" onclick="loadDoc2()">Request data</button>
 
 <script>
 function loadDoc() {
@@ -20,7 +23,18 @@ function loadDoc() {
   xhttp.send();
 }
 </script>
-
+<script>
+function loadDoc2() {
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	      document.getElementById("demo").innerHTML = this.responseText;
+	    }
+	  };
+	  xhttp.open("POST", "demo_post.asp", true);
+	  xhttp.send();
+	}
+</script>
 </body>
 </html>
 
